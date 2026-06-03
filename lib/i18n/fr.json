@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "create": "Créer mon site",
+    "examples": "Exemples"
+  },
+  "hero": {
+    "badge": "✦  Savoia Events  ✦",
+    "headline1": "Votre événement",
+    "headline2": "mérite un site d'exception",
+    "sub": "Créez en quelques minutes un site élégant pour votre mariage, wteya sdek ou fiançailles. Partagez le lien avec vos invités.",
+    "cta": "Créer mon site gratuitement",
+    "ctaDemo": "Voir les exemples"
+  },
+  "showcase": {
+    "title": "Nos créations",
+    "sub": "Deux exemples pour vous inspirer",
+    "mariageLabel": "Mariage",
+    "mariageSub": "Youssef & Dorra — Tunis 2026",
+    "wteyaLabel": "Wteya Sdek",
+    "wteyaSub": "Sana & Karim — Sfax 2026",
+    "view": "Voir le site →"
+  },
+  "types": {
+    "title": "Pour chaque célébration",
+    "sub": "Mariages, fiançailles, hamam thour et bien plus encore",
+    "list": {
+      "mariage": "Mariage",
+      "wteya": "Wteya Sdek",
+      "hamam": "Hamam Thour",
+      "henna": "Nuit du Henné",
+      "fiancailles": "Fiançailles",
+      "anniversaire": "Anniversaire"
+    },
+    "ar": {
+      "mariage": "عرس",
+      "wteya": "وتية الصداق",
+      "hamam": "حمام الثور",
+      "henna": "ليلة الحنة",
+      "fiancailles": "خطوبة",
+      "anniversaire": "عيد ميلاد"
+    }
+  },
+  "pricing": {
+    "title": "Nos formules",
+    "sub": "Commencez gratuitement, évoluez selon vos besoins",
+    "popular": "Le plus populaire",
+    "cta": "Commencer",
+    "free": {
+      "name": "Gratuit",
+      "price": "0",
+      "currency": "DT",
+      "desc": "Pour découvrir",
+      "features": ["1 événement", "Thème de base", "20 photos", "Lien partageable", "Livre d'or"]
+    },
+    "basic": {
+      "name": "Basic",
+      "price": "29",
+      "currency": "DT",
+      "desc": "Pour votre événement",
+      "features": ["3 événements", "Tous les thèmes", "200 photos", "RSVP invités", "QR code téléchargeable"]
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "69",
+      "currency": "DT",
+      "desc": "L'expérience complète",
+      "features": ["Événements illimités", "Domaine personnalisé", "Galerie illimitée", "QR code", "Support prioritaire"]
+    }
+  },
+  "footer": {
+    "tagline": "Sublimez chaque moment précieux",
+    "rights": "© 2026 Savoia Events. Tous droits réservés.",
+    "home": "Accueil",
+    "examples": "Exemples",
+    "pricing": "Tarifs",
+    "contact": "Contact"
+  },
+  "template": {
+    "countdown": {
+      "title": "Plus que",
+      "days": "Jours",
+      "hours": "Heures",
+      "minutes": "Minutes",
+      "seconds": "Secondes"
+    },
+    "programme": "Programme",
+    "venue": "Le Lieu",
+    "gallery": "Galerie Photos",
+    "guestbook": {
+      "title": "Livre d'or",
+      "leave": "Laisser un message",
+      "name": "Votre nom",
+      "msg": "Votre message...",
+      "send": "Envoyer",
+      "messages": [
+        { "name": "Salma B.", "msg": "Félicitations ! Vous formez un couple magnifique. Que votre bonheur soit éternel ✨" },
+        { "name": "Rami & Nesrine", "msg": "Quelle belle soirée en perspective ! On est tellement heureux pour vous deux 💕" },
+        { "name": "Tante Fatma", "msg": "Mabrouk mabrouk ! Que Dieu vous bénisse et comble votre foyer de bonheur." }
+      ]
+    },
+    "rsvp": {
+      "title": "Confirmer ma présence",
+      "sub": "Merci de confirmer avant le 1er août 2026",
+      "name": "Nom complet",
+      "phone": "Numéro de téléphone",
+      "attending": "Serez-vous présent ?",
+      "yes": "Oui, avec grand plaisir !",
+      "no": "Non, malheureusement",
+      "guests": "Nombre de personnes",
+      "send": "Confirmer ma présence",
+      "thanks": "Merci pour votre confirmation !"
+    },
+    "contrat": {
+      "title": "وتية الصداق",
+      "titleFr": "La Wteya Sdek",
+      "sdak": "Montant du Sdak",
+      "jariya": "Jariya (anticipé)",
+      "mouwakhkhar": "Mouakhkhar (différé)",
+      "details": "Détails du contrat",
+      "ceremony": "La cérémonie"
+    },
+    "createdWith": "Site créé avec",
+    "createYours": "Créer le vôtre"
+  }
+}
