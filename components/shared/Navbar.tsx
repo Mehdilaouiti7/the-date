@@ -48,6 +48,22 @@ export default function Navbar({ dark = false, eventName, eventType }: NavbarPro
         >
           {t('nav.examples')}
         </Link>
+        <Link
+          href="/#comment-ca-marche"
+          className={`hidden lg:block font-sans text-sm tracking-wide transition-colors ${
+            dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'
+          }`}
+        >
+          {t('nav.process')}
+        </Link>
+        <Link
+          href="/contact"
+          className={`hidden md:block font-sans text-sm tracking-wide transition-colors ${
+            dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'
+          }`}
+        >
+          {t('nav.contact')}
+        </Link>
         <LanguageSwitcher dark={dark} />
         <Link
           href="/create"
