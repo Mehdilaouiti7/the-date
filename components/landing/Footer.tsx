@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { useLang } from '@/lib/lang-context'
 import FloralDivider from '@/components/shared/FloralDivider'
+import Logo from '@/components/shared/Logo'
 
 export default function Footer() {
   const { t, isRTL } = useLang()
@@ -11,10 +12,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
           {/* Logo */}
-          <p className="font-serif text-3xl font-light tracking-widest text-white mb-2">
-            <span className="text-gold">S</span>avoia <span className="text-gold">E</span>vents
-          </p>
-          <p className={`font-sans text-sm text-white/40 ${isRTL ? 'font-arabic' : ''}`}>
+          <Logo dark variant="lockup" size="md" className="mb-4" />
+          <p className={`font-sans text-sm text-white/40 mt-2 ${isRTL ? 'font-arabic' : ''}`}>
             {t('footer.tagline')}
           </p>
         </div>

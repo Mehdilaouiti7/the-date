@@ -31,7 +31,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-serif font-light leading-tight mb-6 animate-slide-up">
-          <span className="block text-5xl md:text-7xl lg:text-8xl text-savoia-text">
+          <span className="block text-5xl md:text-7xl lg:text-8xl text-ink">
             {t('hero.headline1')}
           </span>
           <span className="block text-5xl md:text-7xl lg:text-8xl italic text-gold mt-2">
@@ -42,7 +42,7 @@ export default function Hero() {
         <FloralDivider className="my-10 max-w-xs mx-auto" />
 
         {/* Subtitle */}
-        <p className={`font-sans font-light text-lg md:text-xl text-savoia-muted max-w-2xl mx-auto mb-12 leading-relaxed ${isRTL ? 'font-arabic' : ''}`}>
+        <p className={`font-sans font-light text-lg md:text-xl text-ink-muted max-w-2xl mx-auto mb-12 leading-relaxed ${isRTL ? 'font-arabic' : ''}`}>
           {t('hero.sub')}
         </p>
 

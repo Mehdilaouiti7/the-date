@@ -17,7 +17,7 @@ export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
             ? 'bg-gold text-white shadow-sm'
             : dark
               ? 'text-white/60 hover:text-white'
-              : 'text-savoia-muted hover:text-savoia-text'
+              : 'text-ink-muted hover:text-ink'
         }`}
       >
         FR
@@ -29,7 +29,7 @@ export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
             ? 'bg-gold text-white shadow-sm'
             : dark
               ? 'text-white/60 hover:text-white'
-              : 'text-savoia-muted hover:text-savoia-text'
+              : 'text-ink-muted hover:text-ink'
         }`}
       >
         عر

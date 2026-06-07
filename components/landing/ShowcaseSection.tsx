@@ -65,7 +65,7 @@ export default function ShowcaseSection() {
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">
             ✦ {t('showcase.title')} ✦
           </p>
-          <h2 className={`font-serif text-4xl md:text-5xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl md:text-5xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('showcase.sub')}
           </h2>
           <FloralDivider className="mt-8 max-w-xs mx-auto" />
@@ -82,11 +82,11 @@ export default function ShowcaseSection() {
                   <p className="font-sans text-xs tracking-[0.25em] text-gold uppercase mb-1">
                     {t('showcase.mariageLabel')}
                   </p>
-                  <h3 className={`font-serif text-2xl text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+                  <h3 className={`font-serif text-2xl text-ink ${isRTL ? 'font-arabic' : ''}`}>
                     {t('showcase.mariageSub')}
                   </h3>
                 </div>
-                <span className="text-xs font-sans text-savoia-muted bg-ivory-dark px-2 py-1 rounded-full border border-gold-light">
+                <span className="text-xs font-sans text-ink-muted bg-ivory-dark px-2 py-1 rounded-full border border-gold-light">
                   عرس
                 </span>
               </div>
@@ -109,11 +109,11 @@ export default function ShowcaseSection() {
                   <p className="font-sans text-xs tracking-[0.25em] text-gold uppercase mb-1">
                     {t('showcase.wteyaLabel')}
                   </p>
-                  <h3 className={`font-serif text-2xl text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+                  <h3 className={`font-serif text-2xl text-ink ${isRTL ? 'font-arabic' : ''}`}>
                     {t('showcase.wteyaSub')}
                   </h3>
                 </div>
-                <span className="text-xs font-sans text-savoia-muted bg-ivory-dark px-2 py-1 rounded-full border border-gold-light">
+                <span className="text-xs font-sans text-ink-muted bg-ivory-dark px-2 py-1 rounded-full border border-gold-light">
                   وتية
                 </span>
               </div>

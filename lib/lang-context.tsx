@@ -30,14 +30,14 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>('fr')
 
   useEffect(() => {
-    const stored = localStorage.getItem('savoia-lang') as Lang
+    const stored = localStorage.getItem('thedate-lang') as Lang
     if (stored === 'fr' || stored === 'ar') setLangState(stored)
   }, [])
 
   useEffect(() => {
     document.documentElement.lang = lang
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
-    localStorage.setItem('savoia-lang', lang)
+    localStorage.setItem('thedate-lang', lang)
   }, [lang])
 
   const setLang = (l: Lang) => setLangState(l)

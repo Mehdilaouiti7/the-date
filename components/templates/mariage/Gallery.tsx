@@ -22,7 +22,7 @@ export default function Gallery() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">✦</p>
-          <h2 className={`font-serif text-4xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('template.gallery')}
           </h2>
           <FloralDivider className="mt-6 max-w-xs mx-auto" />

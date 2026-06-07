@@ -81,14 +81,14 @@ export default function MariagePage() {
       <div className="bg-ivory-dark py-8 border-t border-gold-light">
         <FloralDivider className="max-w-xs mx-auto mb-6" />
         <div className="text-center">
-          <p className="font-script text-3xl text-savoia-text mb-3">Youssef & Dorra</p>
-          <p className="font-sans text-xs tracking-widest text-savoia-muted uppercase">15 Septembre 2026 · Tunis</p>
+          <p className="font-script text-3xl text-ink mb-3">Youssef & Dorra</p>
+          <p className="font-sans text-xs tracking-widest text-ink-muted uppercase">15 Septembre 2026 · Tunis</p>
           <div className="mt-6">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 rounded-full border border-gold-light px-5 py-2 font-sans text-xs text-savoia-muted hover:text-gold hover:border-gold"
+              className="inline-flex items-center gap-2 rounded-full border border-gold-light px-5 py-2 font-sans text-xs text-ink-muted hover:text-gold hover:border-gold"
             >
-              ✦ Créer votre propre site — Savoia Events
+              ✦ Créer votre propre site — The Date
             </Link>
           </div>
         </div>

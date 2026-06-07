@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { useLang } from '@/lib/lang-context'
 import LanguageSwitcher from './LanguageSwitcher'
+import Logo from './Logo'
 
 interface NavbarProps {
   dark?: boolean
@@ -17,10 +18,10 @@ export default function Navbar({ dark = false, eventName, eventType }: NavbarPro
       <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 ${
         dark ? 'bg-black/20 backdrop-blur-md' : 'bg-white/80 backdrop-blur-md border-b border-gold-light'
       }`}>
-        <div className={`text-sm font-serif tracking-wide ${dark ? 'text-white/70' : 'text-savoia-muted'}`}>
+        <div className={`text-sm font-serif tracking-wide ${dark ? 'text-white/70' : 'text-ink-muted'}`}>
           {eventType}
         </div>
-        <div className={`font-script text-xl ${dark ? 'text-white' : 'text-savoia-text'}`}>
+        <div className={`font-script text-xl ${dark ? 'text-white' : 'text-ink'}`}>
           {eventName}
         </div>
         <LanguageSwitcher dark={dark} />
@@ -34,15 +35,15 @@ export default function Navbar({ dark = false, eventName, eventType }: NavbarPro
         ? 'bg-black/20 backdrop-blur-md'
         : 'bg-ivory/90 backdrop-blur-md border-b border-gold-light/50'
     }`}>
-      <Link href="/" className={`font-serif text-xl font-light tracking-widest ${dark ? 'text-white' : 'text-savoia-text'}`}>
-        <span className="text-gold">S</span>avoia <span className="text-gold">E</span>vents
+      <Link href="/" aria-label="The Date — accueil">
+        <Logo dark={dark} variant="mark" size="sm" />
       </Link>
 
       <div className="flex items-center gap-6">
         <Link
           href="/#exemples"
           className={`hidden md:block font-sans text-sm tracking-wide transition-colors ${
-            dark ? 'text-white/70 hover:text-white' : 'text-savoia-muted hover:text-savoia-text'
+            dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'
           }`}
         >
           {t('nav.examples')}

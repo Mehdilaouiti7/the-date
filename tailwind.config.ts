@@ -20,8 +20,8 @@ const config: Config = {
           dark: '#9A7A3A',
           deep: '#7A5E2A',
         },
-        savoia: {
-          text: '#2C2C2C',
+        ink: {
+          DEFAULT: '#2C2C2C',
           muted: '#7A6A54',
           border: '#E8D9B8',
         },

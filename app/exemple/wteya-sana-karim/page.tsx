@@ -84,7 +84,7 @@ export default function WteyaPage() {
                 href="/"
                 className="inline-flex items-center gap-2 rounded-full border border-gold/20 px-5 py-2 font-sans text-xs text-white/40 hover:text-gold hover:border-gold/40"
               >
-                ✦ Créer votre propre site — Savoia Events
+                ✦ Créer votre propre site — The Date
               </Link>
             </div>
           </div>

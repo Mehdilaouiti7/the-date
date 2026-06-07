@@ -24,7 +24,7 @@ export default function Programme({ items }: ProgrammeProps) {
         {/* Header */}
         <div className="text-center mb-14">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">✦</p>
-          <h2 className={`font-serif text-4xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('template.programme')}
           </h2>
           <FloralDivider className="mt-6 max-w-xs mx-auto" />
@@ -52,10 +52,10 @@ export default function Programme({ items }: ProgrammeProps) {
                   }`}>
                     <div className={`bg-white rounded-xl border border-gold-light p-5 shadow-sm hover:shadow-md inline-block w-full`}>
                       <p className="font-sans text-xs tracking-widest text-gold uppercase mb-2">{item.time}</p>
-                      <h3 className={`font-serif text-xl text-savoia-text mb-1 ${isRTL ? 'font-arabic' : ''}`}>
+                      <h3 className={`font-serif text-xl text-ink mb-1 ${isRTL ? 'font-arabic' : ''}`}>
                         {isRTL ? item.titleAr : item.title}
                       </h3>
-                      <p className={`font-sans text-sm text-savoia-muted ${isRTL ? 'font-arabic' : ''}`}>
+                      <p className={`font-sans text-sm text-ink-muted ${isRTL ? 'font-arabic' : ''}`}>
                         {isRTL ? item.descAr : item.desc}
                       </p>
                     </div>

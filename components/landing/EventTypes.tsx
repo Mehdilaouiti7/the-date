@@ -12,12 +12,12 @@ export default function EventTypes() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">
-            ✦ Savoia Events ✦
+            ✦ The Date ✦
           </p>
-          <h2 className={`font-serif text-4xl md:text-5xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl md:text-5xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('types.title')}
           </h2>
-          <p className={`mt-4 font-sans text-savoia-muted ${isRTL ? 'font-arabic' : ''}`}>
+          <p className={`mt-4 font-sans text-ink-muted ${isRTL ? 'font-arabic' : ''}`}>
             {t('types.sub')}
           </p>
           <FloralDivider className="mt-8 max-w-xs mx-auto" />
@@ -37,13 +37,13 @@ export default function EventTypes() {
               <div className="text-3xl md:text-4xl mb-4">{icon}</div>
 
               {/* Arabic name large */}
-              <p className={`font-arabic text-xl md:text-2xl text-savoia-text mb-1 leading-tight`}>
+              <p className={`font-arabic text-xl md:text-2xl text-ink mb-1 leading-tight`}>
                 {t(`types.list.${key}`)}
               </p>
 
               {/* French name small */}
               {!isRTL && (
-                <p className="font-sans text-xs text-savoia-muted tracking-wide">
+                <p className="font-sans text-xs text-ink-muted tracking-wide">
                   {key === 'mariage' ? 'Mariage' :
                    key === 'wteya' ? 'Wteya Sdek' :
                    key === 'hamam' ? 'Hamam Thour' :
