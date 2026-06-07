@@ -102,6 +102,20 @@ export default function ThemeOrnament({ ornament, color, accent }: ThemeOrnament
           })}
         </svg>
       )
+    case 'lineart':
+      return (
+        <svg className="w-full h-full" preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 400">
+          <defs>
+            <pattern id={id} width="160" height="160" patternUnits="userSpaceOnUse">
+              <path d="M80 30 C 60 55, 60 90, 80 120 C 100 90, 100 55, 80 30 Z" fill="none" stroke={color} strokeWidth="0.6" opacity="0.35" />
+              <path d="M40 80 C 55 65, 75 65, 80 80 C 75 95, 55 95, 40 80 Z" fill="none" stroke={color} strokeWidth="0.5" opacity="0.3" />
+              <path d="M120 80 C 105 65, 85 65, 80 80 C 85 95, 105 95, 120 80 Z" fill="none" stroke={color} strokeWidth="0.5" opacity="0.3" />
+              <circle cx="80" cy="80" r="2" fill={accent} opacity="0.5" />
+            </pattern>
+          </defs>
+          <rect width="400" height="400" fill={`url(#${id})`} />
+        </svg>
+      )
     default:
       return null
   }

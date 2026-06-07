@@ -84,6 +84,18 @@ function EnvelopeGlyph({ color, accent }: { color: string; accent: string; opene
   )
 }
 
+function LineMedallion({ color, accent, lifted }: { color: string; accent: string; lifted: boolean }) {
+  return (
+    <svg viewBox="0 0 160 160" className={`w-32 h-32 md:w-40 md:h-40 transition-all duration-700 ${lifted ? 'scale-90 opacity-0 -translate-y-10' : 'scale-100 opacity-100'}`}>
+      <circle cx="80" cy="80" r="62" fill="none" stroke={color} strokeWidth="0.8" opacity="0.5" />
+      <path d="M80 46 C 64 64, 64 96, 80 114 C 96 96, 96 64, 80 46 Z" fill="none" stroke={color} strokeWidth="1" opacity="0.7" />
+      <path d="M48 80 C 60 68, 72 68, 80 80 C 72 92, 60 92, 48 80 Z" fill="none" stroke={color} strokeWidth="0.8" opacity="0.55" />
+      <path d="M112 80 C 100 68, 88 68, 80 80 C 88 92, 100 92, 112 80 Z" fill="none" stroke={color} strokeWidth="0.8" opacity="0.55" />
+      <circle cx="80" cy="80" r="2.4" fill={accent} />
+    </svg>
+  )
+}
+
 /* ---------- Main gate ---------- */
 
 export default function InvitationGate({ theme, children }: InvitationGateProps) {
@@ -166,6 +178,9 @@ export default function InvitationGate({ theme, children }: InvitationGateProps)
               <div className={`transition-all duration-700 ${opened ? 'translate-y-[-40px] scale-110 opacity-0' : ''}`}>
                 <EnvelopeGlyph color={colors.primary} accent={colors.accent} opened={opened} />
               </div>
+            )}
+            {opening.style === 'line-veil' && (
+              <LineMedallion color={colors.primary} accent={colors.accent} lifted={opened} />
             )}
           </div>
 

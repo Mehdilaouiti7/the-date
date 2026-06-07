@@ -17,6 +17,7 @@ Dépose ici les fichiers **MP3** suivants (idéalement 1–3 minutes, en boucle,
 | `corporate-silver.mp3`        | Corporate Silver | Piano minimaliste, ambiance professionnelle discrète            |
 | `toge-et-sceau.mp3`           | Toge & Sceau     | Cordes solennelles, ambiance académique / cérémonie             |
 | `petits-nuages.mp3`           | Petits Nuages    | Boîte à musique, douceur enfantine, ballons et confettis        |
+| `minimaliste.mp3`             | Trait Délicat    | Piano & cordes, esquisse délicate, ambiance épurée et posée     |
 
 Le composant `SoundToggle` (`components/invitation/SoundToggle.tsx`) charge automatiquement
 le fichier déclaré dans `lib/invitationThemes.ts` (`theme.sound.src`). Si le fichier est

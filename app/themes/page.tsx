@@ -17,7 +17,7 @@ export default function ThemesPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center mb-16">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">✦ Univers ✦</p>
           <h1 className={`font-serif text-4xl md:text-5xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
-            Huit mondes, une invitation à chacun
+            Neuf mondes, une invitation à chacun
           </h1>
           <p className={`mt-4 font-sans text-ink-muted leading-relaxed ${isRTL ? 'font-arabic' : ''}`}>
             Chaque thème est une expérience complète : palette, calligraphie, animations d&apos;ouverture

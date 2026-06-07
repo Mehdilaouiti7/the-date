@@ -1,4 +1,4 @@
-export type OpeningStyle = 'wax-seal' | 'mashrabiya-doors' | 'bloom' | 'curtain' | 'envelope'
+export type OpeningStyle = 'wax-seal' | 'mashrabiya-doors' | 'bloom' | 'curtain' | 'envelope' | 'line-veil'
 
 export interface InvitationTheme {
   slug: string
@@ -34,7 +34,9 @@ export interface InvitationTheme {
     label: string
     credit?: string
   }
-  ornament: 'arabesque' | 'mashrabiya' | 'florals' | 'stars' | 'botanical' | 'geometric' | 'laurel' | 'clouds'
+  ornament: 'arabesque' | 'mashrabiya' | 'florals' | 'stars' | 'botanical' | 'geometric' | 'laurel' | 'clouds' | 'lineart'
+  /** Marks themes that use the dedicated minimalist single-page layout (countdown, programme, lieu, RSVP) */
+  layout?: 'minimal'
 }
 
 export const invitationThemes: InvitationTheme[] = [
@@ -165,6 +167,23 @@ export const invitationThemes: InvitationTheme[] = [
     opening: { style: 'bloom', label: 'Le ballon surprise', hint: 'Touchez le ballon pour révéler la surprise' },
     sound: { src: '/sounds/petits-nuages.mp3', label: 'Boîte à musique — douceur enfantine' },
     ornament: 'clouds',
+  },
+  {
+    slug: 'minimaliste',
+    name: 'Trait Délicat',
+    nameAr: 'لمسة رقيقة',
+    tagline: 'Lignes fines, papier ivoire et illustrations à l\'encre bleu-gris',
+    bestFor: ['Mariage', 'Fiançailles', 'Anniversaire', 'Inauguration'],
+    colors: {
+      bg: '#FBFAF7', bgDeep: '#3C4A52', surface: '#FFFFFF',
+      primary: '#7C93A0', primaryDark: '#4F6470', accent: '#C7B299',
+      text: '#3C4A52', textMuted: '#8A99A1', onPrimary: '#FFFFFF',
+    },
+    fonts: { display: 'script', body: 'sans' },
+    opening: { style: 'line-veil', label: 'Le voile de lin', hint: 'Touchez le médaillon pour lever le voile et découvrir l\'invitation' },
+    sound: { src: '/sounds/minimaliste.mp3', label: 'Piano & cordes — esquisse délicate' },
+    ornament: 'lineart',
+    layout: 'minimal',
   },
 ]
 

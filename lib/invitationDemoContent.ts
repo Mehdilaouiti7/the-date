@@ -1,4 +1,27 @@
 import type { InvitationDemoContent } from '@/components/invitation/InvitationDemo'
+import type { MinimalDemoContent } from '@/components/invitation/MinimalDemo'
+
+export const minimalDemoContent: Record<string, MinimalDemoContent> = {
+  'minimaliste': {
+    heading: 'Andrea & Emilio',
+    kicker: 'Mariage  ·  Nous nous marions',
+    subheading: 'Entourés de ceux qui comptent, nous célébrerons le début de notre vie commune. Après l\'échange des alliances, nous serions ravis de partager ce moment spécial avec vous.',
+    eventDateISO: '2026-09-13T17:00:00',
+    dateLabel: '13 Septembre 2026',
+    locationLabel: 'Finca Portugal',
+    locationAddress: 'Chemin des Oliviers, 7000 Hammamet',
+    message: 'Comme deux traits qui se rejoignent pour dessiner une seule ligne, nos chemins se sont croisés pour ne plus se quitter. Nous serions infiniment heureux de vous compter parmi nous pour ce jour si simple et si précieux.',
+    schedule: [
+      { time: '16h30', title: 'Arrivée des invités', desc: 'Accueil au jardin, boissons fraîches et musique douce.' },
+      { time: '17h00', title: 'Cérémonie', desc: 'Échange des vœux sous la tonnelle fleurie.' },
+      { time: '18h00', title: 'Cocktail', desc: 'Petits mets et discussions au coucher du soleil.' },
+      { time: '20h00', title: 'Dîner', desc: 'Repas servi en terrasse, entre amis et famille.' },
+      { time: '22h00', title: 'Fête', desc: 'Musique live et piste de danse jusqu\'au bout de la nuit.' },
+    ],
+    giftsNote: 'Votre présence est le plus beau des cadeaux. Si vous souhaitez néanmoins nous gâter, une cagnotte pour notre voyage de noces sera disponible le jour J.',
+    rsvpDeadline: 'Merci de nous faire savoir si vous serez des nôtres avant le 1er août.',
+  },
+}
 
 export const demoContent: Record<string, InvitationDemoContent> = {
   'conte-dore': {
