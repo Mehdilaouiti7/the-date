@@ -3,8 +3,7 @@ import { useState } from 'react'
 import { useLang } from '@/lib/lang-context'
 import { eventTypes } from '@/lib/themes'
 
-// TODO: replace with the studio's real WhatsApp Business number (E.164, no leading +/00)
-const WHATSAPP_NUMBER = '21620000000'
+const WHATSAPP_NUMBER = '21626363451'
 
 function buildWhatsAppMessage(values: Record<string, string>, eventLabel: string) {
   const lines = [

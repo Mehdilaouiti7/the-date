@@ -5,7 +5,7 @@ import FloralDivider from '@/components/shared/FloralDivider'
 import ContactForm from '@/components/landing/ContactForm'
 import { useLang } from '@/lib/lang-context'
 
-const WHATSAPP_NUMBER = '21620000000'
+const WHATSAPP_NUMBER = '21626363451'
 const WHATSAPP_DIRECT_TEXT = encodeURIComponent('Bonjour The Date ✦ Je souhaiterais en savoir plus sur vos invitations.')
 
 export default function ContactPage() {
