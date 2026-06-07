@@ -41,7 +41,7 @@ export default function Navbar({ dark = false, eventName, eventType }: NavbarPro
 
       <div className="flex items-center gap-6">
         <Link
-          href="/#exemples"
+          href="/themes"
           className={`hidden md:block font-sans text-sm tracking-wide transition-colors ${
             dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'
           }`}

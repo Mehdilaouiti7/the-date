@@ -127,6 +127,15 @@ export default function ShowcaseSection() {
             </div>
           </div>
         </div>
+
+        <div className="text-center mt-14">
+          <Link
+            href="/themes"
+            className="inline-flex items-center gap-2 rounded-full border border-gold px-8 py-4 font-sans text-sm tracking-wide text-gold hover:bg-ivory transition-colors"
+          >
+            ✦ Explorer nos huit univers d&apos;invitation ✦
+          </Link>
+        </div>
       </div>
     </section>
   )
