@@ -33,10 +33,10 @@ const greatVibes = Great_Vibes({
 })
 
 export const metadata: Metadata = {
-  title: "Savoia Events — Sites événementiels d'exception",
+  title: "The Date — Sites événementiels d'exception",
   description: "Créez un site élégant pour votre mariage, wteya sdek ou fiançailles. Bilingue arabe et français.",
   openGraph: {
-    title: "Savoia Events",
+    title: "The Date",
     description: "Sites événementiels d'exception pour la Tunisie",
     type: "website",
   },
@@ -49,7 +49,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={`${cormorant.variable} ${inter.variable} ${amiri.variable} ${greatVibes.variable} font-sans bg-ivory text-savoia-text antialiased`}>
+      <body className={`${cormorant.variable} ${inter.variable} ${amiri.variable} ${greatVibes.variable} font-sans bg-ivory text-ink antialiased`}>
         <LangProvider>
           {children}
         </LangProvider>

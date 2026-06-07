@@ -24,7 +24,7 @@ export default function Guestbook({ messages }: GuestbookProps) {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">✦</p>
-          <h2 className={`font-serif text-4xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('template.guestbook.title')}
           </h2>
           <FloralDivider className="mt-6 max-w-xs mx-auto" />
@@ -38,12 +38,12 @@ export default function Guestbook({ messages }: GuestbookProps) {
                 <div className="w-9 h-9 rounded-full bg-ivory-dark border border-gold-light flex items-center justify-center font-serif text-gold font-light">
                   {m.name.charAt(0)}
                 </div>
-                <span className={`font-sans text-sm font-medium text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+                <span className={`font-sans text-sm font-medium text-ink ${isRTL ? 'font-arabic' : ''}`}>
                   {m.name}
                 </span>
                 <span className="text-gold/40 text-sm">✦</span>
               </div>
-              <p className={`font-sans text-savoia-muted leading-relaxed ${isRTL ? 'font-arabic text-right' : ''}`}>
+              <p className={`font-sans text-ink-muted leading-relaxed ${isRTL ? 'font-arabic text-right' : ''}`}>
                 {m.msg}
               </p>
             </div>
@@ -56,13 +56,13 @@ export default function Guestbook({ messages }: GuestbookProps) {
         {sent ? (
           <div className="text-center py-8">
             <div className="text-3xl mb-3">✉️</div>
-            <p className={`font-serif text-xl text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+            <p className={`font-serif text-xl text-ink ${isRTL ? 'font-arabic' : ''}`}>
               {t('template.guestbook.send')} !
             </p>
           </div>
         ) : (
           <form onSubmit={handleSend} className="space-y-4">
-            <h3 className={`font-serif text-xl text-savoia-text mb-6 ${isRTL ? 'font-arabic text-right' : ''}`}>
+            <h3 className={`font-serif text-xl text-ink mb-6 ${isRTL ? 'font-arabic text-right' : ''}`}>
               {t('template.guestbook.leave')}
             </h3>
             <input
@@ -70,14 +70,14 @@ export default function Guestbook({ messages }: GuestbookProps) {
               value={name}
               onChange={e => setName(e.target.value)}
               placeholder={t('template.guestbook.name')}
-              className={`w-full rounded-lg border border-gold-light bg-white px-4 py-3 font-sans text-sm text-savoia-text placeholder:text-savoia-muted/50 focus:border-gold focus:outline-none ${isRTL ? 'text-right font-arabic' : ''}`}
+              className={`w-full rounded-lg border border-gold-light bg-white px-4 py-3 font-sans text-sm text-ink placeholder:text-ink-muted/50 focus:border-gold focus:outline-none ${isRTL ? 'text-right font-arabic' : ''}`}
             />
             <textarea
               value={msg}
               onChange={e => setMsg(e.target.value)}
               placeholder={t('template.guestbook.msg')}
               rows={4}
-              className={`w-full rounded-lg border border-gold-light bg-white px-4 py-3 font-sans text-sm text-savoia-text placeholder:text-savoia-muted/50 focus:border-gold focus:outline-none resize-none ${isRTL ? 'text-right font-arabic' : ''}`}
+              className={`w-full rounded-lg border border-gold-light bg-white px-4 py-3 font-sans text-sm text-ink placeholder:text-ink-muted/50 focus:border-gold focus:outline-none resize-none ${isRTL ? 'text-right font-arabic' : ''}`}
             />
             <button
               type="submit"

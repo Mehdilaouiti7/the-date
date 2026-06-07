@@ -51,7 +51,7 @@ export default function Countdown({ targetDate, dark = true }: CountdownProps) {
 
   const labelClass = dark
     ? 'text-white/60 font-sans text-xs tracking-widest uppercase mt-1'
-    : 'text-savoia-muted font-sans text-xs tracking-widest uppercase mt-1'
+    : 'text-ink-muted font-sans text-xs tracking-widest uppercase mt-1'
 
   return (
     <div className="flex gap-3 md:gap-4">

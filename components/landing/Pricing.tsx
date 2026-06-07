@@ -49,16 +49,16 @@ function PlanCard({ name, price, currency, desc, features, highlighted, popular,
   return (
     <div className="rounded-2xl border border-gold-light bg-white p-8 shadow-sm hover:shadow-md">
       <div className="border-b border-gold-light pb-6 mb-6">
-        <h3 className="font-serif text-2xl font-light text-savoia-text mb-1">{name}</h3>
-        <p className="font-sans text-sm text-savoia-muted mb-4">{desc}</p>
+        <h3 className="font-serif text-2xl font-light text-ink mb-1">{name}</h3>
+        <p className="font-sans text-sm text-ink-muted mb-4">{desc}</p>
         <div className="flex items-baseline gap-1">
-          <span className="font-serif text-5xl font-light text-savoia-text">{price}</span>
-          <span className="font-sans text-lg text-savoia-muted">{currency}</span>
+          <span className="font-serif text-5xl font-light text-ink">{price}</span>
+          <span className="font-sans text-lg text-ink-muted">{currency}</span>
         </div>
       </div>
       <ul className="space-y-3 mb-8">
         {features.map((f) => (
-          <li key={f} className="flex items-center gap-3 font-sans text-sm text-savoia-muted">
+          <li key={f} className="flex items-center gap-3 font-sans text-sm text-ink-muted">
             <span className="text-gold text-base">✓</span>
             {f}
           </li>
@@ -126,12 +126,12 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="font-sans text-xs tracking-[0.3em] text-gold uppercase mb-4">
-            ✦ Savoia Events ✦
+            ✦ The Date ✦
           </p>
-          <h2 className={`font-serif text-4xl md:text-5xl font-light text-savoia-text ${isRTL ? 'font-arabic' : ''}`}>
+          <h2 className={`font-serif text-4xl md:text-5xl font-light text-ink ${isRTL ? 'font-arabic' : ''}`}>
             {t('pricing.title')}
           </h2>
-          <p className={`mt-4 font-sans text-savoia-muted ${isRTL ? 'font-arabic' : ''}`}>
+          <p className={`mt-4 font-sans text-ink-muted ${isRTL ? 'font-arabic' : ''}`}>
             {t('pricing.sub')}
           </p>
           <FloralDivider className="mt-8 max-w-xs mx-auto" />
